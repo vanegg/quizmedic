@@ -12,12 +12,13 @@ $secondary: #C698AF;
 }
 
 .body-zone {
-	margin-left: 200px;
-	width: 900px;
+	margin-left: 10%;
+	max-width: 900px;
 	min-height: 850px;
 	background-color: white;
 	border-left: 2px dashed $secondary;
 	border-right: 2px dashed $secondary;
+	z-index: 1000;
 }
 
 #portada {
@@ -87,6 +88,9 @@ $secondary: #C698AF;
 }
 
 #teddy-home {
-	height: 840px;
-  width: auto;
+ /*max-height: 840px;*/
+  max-width: 600px;
+ /*position: absolute;*/
+ right: 0px;
+ bottom: 0px;
 }
