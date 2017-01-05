@@ -1,0 +1,47 @@
+<div class="container-fluid home">
+	<div class="row">
+		<div class="col-md-8 ">
+		<div class= "body-zone">
+			<div id="portada">
+				<h3 class="text-center"> Universidad Nacional Autónoma de México</h3>
+				<h3 class="text-center"> Facultad de Medicina</h3>
+				<h3 class="text-center"> FISIOLOGÍA: CICLO CARDIACO</h3>
+			</div>
+			<div id='players-zone'>
+				<h1 class="text-center">Quiz médico</h1>
+				<br><br><br>
+				<h4 class="text-center">
+					Por favor indica el nombre de los equipos participantes!
+				</h4>
+				<br>
+				<%= form_tag("/game", method: "get", class: "") do %>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+								<div class="row">
+									<div class=  "col-sm-3">
+								  	<%= label_tag(:p1, "Participante 1:", class: "control-label") %>
+								  </div>
+								  <div class=  "col-sm-3">
+								  	<%= text_field_tag(:p1,"", class: "form-control ") %>
+								  </div>
+								  <div class=  "col-sm-3">
+								  	<%= label_tag(:p2, "Participante 2:", class: "control-label") %>
+								  </div>
+								  <div class=  "col-sm-3">
+								  	<%= text_field_tag(:p2,"", class: "form-control") %>
+								  </div>
+								</div>
+						</div>
+					</div>
+					<br>
+					<div class="row text-center"><%= submit_tag("¡Jugar!", class:'btn btn-lg btn-default btn-play') %></div>
+				<% end %> 
+			</div>
+		</div>
+
+		</div>
+		<div class="col-md-4">
+			<%= image_tag "teddy.jpg", id: 'teddy-home'%>	
+		</div>
+	</div>
+</div>

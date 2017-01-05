@@ -1,0 +1,92 @@
+// Place all the styles related to the s_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$secondary: #C698AF;
+
+.home {
+	background-color: #F3F3F3;
+	text-align: center;
+}
+
+.body-zone {
+	margin-left: 200px;
+	width: 900px;
+	min-height: 850px;
+	background-color: white;
+	border-left: 2px dashed $secondary;
+	border-right: 2px dashed $secondary;
+}
+
+#portada {
+	display: inline-block;
+	padding: 20px;
+	width: 80%; 
+	background-color: $secondary;
+	color: white;
+	font-family: "Lucida Console", Monaco, monospace;
+	border: 2px solid $secondary;
+	border-radius: 7px;
+	margin-top: 20px;/*
+	margin-left: 360px;*/
+}
+
+#players-zone{
+	display: inline-block;
+	margin-top: 30px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 0px solid $secondary;
+	border-radius: 7px;
+	color: #967485;
+}
+
+.btn {
+	border-color: #967485;
+	color:  #967485; 
+}
+
+.game {
+	background-color: white;
+}
+
+.game-header {
+	background-color: $secondary;
+	color: white;
+	padding: 10px;
+
+}
+
+.p1-area, .p2-area {
+	border: 2px dashed $secondary;
+	border-radius: 7px;
+	padding: 15px;
+}
+
+#footer-teddy{
+	max-width: 100%; 
+  height: auto; 
+  position: fixed;
+  bottom: 0px;
+  left: 40%;
+}
+
+#teddy-winner{
+  height: 840px;
+  width: auto;
+}
+
+#to-home {
+	position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+#teddy-home {
+	height: 840px;
+  width: auto;
+}

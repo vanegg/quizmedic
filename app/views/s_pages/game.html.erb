@@ -1,0 +1,47 @@
+<div class="container-fluid game">
+	<div class="row">
+		<div class="col-md-12">
+		<div class= "game-header">
+				<h3 class="text-center">
+					Quiz médico
+				</h3>
+				<h4 class="text-center">
+					¡Contesta las preguntas lo más rápido que puedas!
+				</h4>
+				<h4 class="text-center">Gana el jugador que acierte 5 veces primero</h4>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+						<h2 id= "p1-player" class="text-center "><%=params[:p1]%></h2>
+						<br>
+					<div class= "p1-area">
+						<div id='p1' class='question_area'>
+							<%= render partial: "question", locals: {question: @s_questions[0], player: 1}%>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+				<br>
+						<h2 id= "p2-player" class="text-center"><%=params[:p2]%></h2>
+					<div class= "p1-area">
+						<div id='p2' class='question_area'>
+							<%= render partial: "question", locals: {question: @s_questions[1], player: 2}%>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		<%= link_to "Atras", '/home', class: "btn btn-default", id:"to-home"%>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+		<%= image_tag "teddy4.jpg", id:'footer-teddy', class: 'text-center'%>	
+		</div>
+	</div>
+</div>

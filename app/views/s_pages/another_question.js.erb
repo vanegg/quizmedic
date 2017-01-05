@@ -1,0 +1,32 @@
+player='#p'+<%=@player%>;
+
+if (<%=@hit%> == true){
+	hit = parseInt($(player +'.question_area #hits').text()) + 1;
+	if (hit >= 5) {
+		winner = $(player+'-player').text();
+		$(window.location.replace("/winner?win="+winner))
+	}
+} else {
+	hit = parseInt($(player +'.question_area #hits').text());
+}
+
+layout = '<h4>Aciertos:<span id="hits">'+ hit + '</span></h4><h3 class="text-center">'+
+				'<%= @s_question[:question]%>' + 
+				'</h3><img alt="" src="http://lorempixel.com/140/140/" class="img-thumbnail" /><div class="row">';
+
+<%if @s_question[:answer]%>
+layout += '<div class="col-md-6">' +
+				'<%= link_to "VERDADERO",another_question_path(hit: true, num_q: @s_question[:id], player: @player), remote: true, class: "btn btn-default", id:"true"%>' +
+				'</div><div class="col-md-6">' +
+				'<%= link_to "FALSO",another_question_path(hit: false, num_q: @s_question[:id], player: @player), remote: true, class: "btn btn-default", id:"false"%>' +
+				'</div>';
+<%else%>
+layout += '<div class="col-md-6">' +
+				'<%= link_to "VERDADERO",another_question_path(hit: false, num_q: @s_question[:id], player: @player), remote: true, class: "btn btn-default", id:"true"%>' +
+				'</div><div class="col-md-6">' +		 
+				'<%= link_to "FALSO",another_question_path(hit: true, num_q: @s_question[:id], player: @player), remote: true, class: "btn btn-default", id:"false"%>' +
+				'</div>';
+<%end%>
+layout += '</div>';
+
+$(player +'.question_area').empty().append(layout);
