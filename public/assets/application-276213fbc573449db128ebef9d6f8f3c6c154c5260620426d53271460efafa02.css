@@ -8799,15 +8799,16 @@ button.close {
 
 /* line 14, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 .body-zone {
-  margin-left: 200px;
-  width: 900px;
+  margin-left: 10%;
+  max-width: 900px;
   min-height: 850px;
   background-color: white;
   border-left: 2px dashed #C698AF;
   border-right: 2px dashed #C698AF;
+  z-index: 1000;
 }
 
-/* line 23, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 24, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #portada {
   display: inline-block;
   padding: 20px;
@@ -8822,7 +8823,7 @@ button.close {
 margin-left: 360px;*/
 }
 
-/* line 36, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 37, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #players-zone {
   display: inline-block;
   margin-top: 30px;
@@ -8835,32 +8836,32 @@ margin-left: 360px;*/
   color: #967485;
 }
 
-/* line 48, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 49, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 .btn {
   border-color: #967485;
   color: #967485;
 }
 
-/* line 53, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 54, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 .game {
   background-color: white;
 }
 
-/* line 57, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 58, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 .game-header {
   background-color: #C698AF;
   color: white;
   padding: 10px;
 }
 
-/* line 64, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 65, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 .p1-area, .p2-area {
   border: 2px dashed #C698AF;
   border-radius: 7px;
   padding: 15px;
 }
 
-/* line 70, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 71, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #footer-teddy {
   max-width: 100%;
   height: auto;
@@ -8869,23 +8870,28 @@ margin-left: 360px;*/
   left: 40%;
 }
 
-/* line 78, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 79, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #teddy-winner {
   height: 840px;
   width: auto;
 }
 
-/* line 83, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 84, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #to-home {
   position: fixed;
   bottom: 50px;
   right: 50px;
 }
 
-/* line 89, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
+/* line 90, /home/vane/Documents/RoRails/quizmedico/app/assets/stylesheets/s_pages.scss */
 #teddy-home {
-  height: 840px;
-  width: auto;
+ /*
+
+ */
+  /*max-width: 600px;*/
+  /*position: absolute;*/
+  right: 0px;
+  bottom: 0px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
