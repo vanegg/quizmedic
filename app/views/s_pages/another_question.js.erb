@@ -12,7 +12,7 @@ if (<%=@hit%> == true){
 
 layout = '<h4>Aciertos:<span id="hits">'+ hit + '</span></h4><h3 class="text-center">'+
 				'<%= @s_question[:question]%>' + 
-				'</h3>' + '<%= image_tag @s_question[:image], id: "teddy-home", class: "img-responsive"%>' + '<div class="row">';
+				'</h3>' + '<%= image_tag @s_question[:image], class: "img-responsive"%>' + '<div class="row">';
 				
 <%if @s_question[:answer]%>
 layout += '<div class="col-md-6">' +

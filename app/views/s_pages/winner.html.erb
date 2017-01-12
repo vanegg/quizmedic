@@ -1,26 +1,21 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-5">
-			<%= image_tag "teddy5.jpg", id: "teddy-winner", class: 'text-center'%>	
+		<div class="col-sm-5">
+			<%= image_tag "teddy5.jpg", id: "teddy-winner", class: 'img-responsive'%>	
 		</div>
-		<div class="col-md-7">
+		<div class="col-sm-7">
 			<h3 class="text-center">
 				Quiz médico
 			</h3>
 			<h1 class="text-center">
-				GANADOR PARTICIPANTE: <%=params[:win]%>
+				GANADOR PARTICIPANTE:
 			</h1>
-			
-			<div class="row">
-				<div class="col-md-6">
-					
-				</div>
-				<div class="col-md-6">
-					
-				</div>
-			</div>
+
+			<div class="jumbotron">
+    			<h1><%=params[:win]%></h1>  
+  			</div>
 		<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12">
 		<%= link_to "Volver a Jugar", '/home', class: "btn btn-default", id:"to-home"%>
 		</div>
 	</div>
